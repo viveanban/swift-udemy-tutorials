@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var randIdx1: Int = 0
     var randIdx2: Int = 0
     
@@ -18,19 +18,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        rollDices()
     }
-
+    
     @IBAction func onRoll(_ sender: UIButton) {
+        rollDices()
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        rollDices()
+    }
+    
+    func rollDices(){
         changeDice(imageView: diceImageView1)
         changeDice(imageView: diceImageView2)
     }
-
+    
     func changeDice(imageView: UIImageView){
         let randIdx = Int.random(in: 1...6)
         let img = "dice\(randIdx)"
         imageView.image = UIImage(named: img)
     }
-    
+
 }
 
