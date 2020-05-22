@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.answerPressed(_:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.nextQuestion():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allQuestion.list.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
